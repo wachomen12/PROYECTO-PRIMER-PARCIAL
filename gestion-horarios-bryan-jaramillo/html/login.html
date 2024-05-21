@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <!-- barra -->
+    <header class="contenedor-arriba" id="contenedor-arriba">
+        <h2>Menú</h2>
+        <!-- para ocupar un coso para mostrar las opciones del bar xd -->
+        <!-- <div id="menu-iconos">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div> -->
+        <ul id="menu-opciones">
+            <li><a href="../html/index.html" id="registro">Inicio</a></li>
+            <li><a href="../html/registro.html" id="registro">Registro</a></li>
+            <li><a href="../html/carreras.html" id="carreras">Facultades</a></li>
+            <li><button id="boton-soporte">Soporte</button></li>
+        </ul>
+    </header>
+    <!-- contenido -->
+    <main class="contenedor-medio" id="contenedor-medio">
+        <section class="barra-medio">
+            <button id="contenedorBoton-arriba"><i class="fa-solid fa-bars"></i></button>
+        </section>
+        <section class="panel">
+            <div class="panel-login">
+                <img class="hero-logo" src="../image/LOGO-ULEAM-HORIZONTAL.png" alt="hero de uleam">
+                <h2>Usuarios</h2>
+                <form id="login-form">
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <button id="boton-registro">Registro</button>
+                <button id="boton-admin">Iniciar sesión como administrador</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- links y redes -->
+    <footer class="contenedor-abajo">
+        <div class="contenido-abajo">
+            <h3 class="contenido-texto">
+                © 2024 Universidad Laica Eloy Alfaro de Manabí - Jaramillo Cano Bryan Roberto. 
+            </h3>
+        </div>
+    </footer>
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

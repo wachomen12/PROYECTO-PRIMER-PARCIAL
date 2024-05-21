@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Ingresar Horarios</title>
+</head>
+<body>
+
+    <!-- barra -->
+    <header class="contenedor-arriba" id="contenedor-arriba">
+        <h2>Menú</h2>
+        <ul id="menu-opciones">
+            <li><a href="../html/loginAdmin.html" id="loginAdmin">Cerrar sesión</a></li>
+            <li><button id="boton-soporte">Soporte</button></li>
+        </ul>
+    </header>
+
+
+
+    <main class="contenedor-medio" id="contenedor-medio">
+        <section class="barra-medio">
+            <button id="contenedorBoton-arriba"><i class="fa-solid fa-bars"></i></button>
+            <div class="hero">
+                <img class="hero-logo" src="../image/LOGO-ULEAM-HORIZONTAL.png" alt="hero de uleam">
+                <h1 class="hero-titulo">Horarios disponibles</h1>
+            </div>
+        </section>
+        <section class="contenedor">
+            <h2>Ingresar Horarios</h2>
+            <form id="horarios-form">
+                <div>
+                    <label for="materia">Materia:</label>
+                    <input type="text" id="materia" name="materia" required>
+                </div>
+                <div>
+                    <label for="creditos">Créditos:</label>
+                    <input type="number" id="creditos" name="creditos" required>
+                </div>
+                <div>
+                    <label for="facultad">Facultad:</label>
+                    <select id="facultad" name="facultad" required>
+                        <option value="">Seleccionar</option>
+                        <option value="Salud">Facultad de Ciencias de la salud</option>
+                        <option value="Ingenieria">Facultad de Ingeniería</option>
+                        <option value="Educacion">Facultad de educación</option>
+                        <option value="Informatica">Facultad de Informatica</option>
+                        <!-- Agregar más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div>
+                    <label for="paralelo">Paralelo:</label>
+                    <input type="text" id="paralelo" name="paralelo" required>
+                </div>
+                <div>
+                    <label for="profesor">Profesor:</label>
+                    <input type="text" id="profesor" name="profesor" required>
+                </div>
+                <div>
+                    <label for="cupos">Cupos disponibles:</label>
+                    <input type="number" id="cupos" name="cupos" required>
+                </div>
+                <div>
+                    <label>Seleccionar días y horas:</label>
+                    <div>
+                        <label><input type="checkbox" name="dia" value="Lunes"> Lunes</label>
+                        <input type="time" name="hora-inicio-lunes" id="hora-inicio-lunes" disabled required> -
+                        <input type="time" name="hora-fin-lunes" id="hora-fin-lunes" disabled required>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="dia" value="Martes"> Martes</label>
+                        <input type="time" name="hora-inicio-martes" id="hora-inicio-martes" disabled required> -
+                        <input type="time" name="hora-fin-martes" id="hora-fin-martes" disabled required>
+                    </div>
+                    <!-- Repetir para los demás días de la semana -->
+                    <!-- Ejemplo para Miércoles -->
+                    <div>
+                        <label><input type="checkbox" name="dia" value="Miércoles"> Miércoles</label>
+                        <input type="time" name="hora-inicio-miercoles" id="hora-inicio-miercoles" disabled required> -
+                        <input type="time" name="hora-fin-miercoles" id="hora-fin-miercoles" disabled required>
+                    </div>
+                    <!-- Repetir para los demás días de la semana -->
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <!-- mostrar cosos -->
+        <section>
+            <h2>Horarios registrados</h2>
+            <div id="horarios-container" class="horarios-container"></div>
+        </section>
+    </main>
+    
+        <!-- links y redes -->
+        <footer class="contenedor-abajo">
+            <div class="contenido-abajo">
+                <h3 class="contenido-texto">
+                    © 2024 Universidad Laica Eloy Alfaro de Manabí - Jaramillo Cano Bryan Roberto. 
+                </h3>
+            </div>
+        </footer>
+    <script src="../javascript/admin.js"></script>
+</body>
+</html>

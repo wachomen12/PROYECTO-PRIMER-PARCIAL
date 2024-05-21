@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/horarios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Matrícula de Horarios</title>
+</head>
+<body>
+     <!-- barra -->
+     <header class="contenedor-arriba" id="contenedor-arriba">
+        <h2>Menú</h2>
+        <ul id="menu-opciones">
+            <li><a href="../html/login.html" id="login">Cerrar sesión</a></li>
+            <li><a href="../html/matriculas.html" id="matriculas">Ver Matriculas existentes</a></li>
+            <li><button id="boton-perfil">Ver perfil</button></li>
+            <li><button id="boton-soporte">Soporte</button></li>
+        </ul>
+    </header>
+    <main class="contenedor-medio" id="contenedor-medio">
+        <section class="barra-medio">
+            <button id="contenedorBoton-arriba"><i class="fa-solid fa-bars"></i></button>
+            <div class="hero">
+                <img class="hero-logo" src="../image/LOGO-ULEAM-HORIZONTAL.png" alt="hero de uleam">
+                <h1 class="hero-titulo">Horarios disponibles</h1>
+            </div>
+        </section>
+        <section>
+            <div id="horarios-container"></div>
+        </section>
+    </main>
+    
+    <!-- links y redes -->
+    <footer class="contenedor-abajo">
+        <div class="contenido-abajo">
+            <h3 class="contenido-texto">
+                © 2024 Universidad Laica Eloy Alfaro de Manabí - Jaramillo Cano Bryan Roberto. 
+            </h3>
+        </div>
+    </footer>
+    <script src="../javascript/horarios.js"></script>
+</body>
+</html>

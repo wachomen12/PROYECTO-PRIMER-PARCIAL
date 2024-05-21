@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Registro de usuarios</title>
+</head>
+<body>
+    <!-- barra -->
+    <header class="contenedor-arriba" id="contenedor-arriba">
+        <h2>Menú</h2>
+        <!-- para ocupar un coso para mostrar las opciones del bar xd -->
+        <!-- <div id="menu-iconos">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div> -->
+        <ul id="menu-opciones">
+            <li><a href="../html/index.html" id="Inicio">Inicio</a></li>
+            <li><a href="../html/login.html" id="login">Iniciar sesión</a></li>
+            <li><a href="../html/carreras.html" id="carreras">Facultades</a></li>
+            <li><button id="boton-soporte">Soporte</button></li>
+        </ul>
+    </header>
+    <!-- contenido -->
+    <main class="contenedor-medio" id="contenedor-medio">
+        <section class="barra-medio">
+            <button id="contenedorBoton-arriba"><i class="fa-solid fa-bars"></i></button>
+        </section>
+        <div class="contenedor-medio-panel">
+            <div class="registro-panel">
+                <img class="hero-logo" src="../image/LOGO-ULEAM-HORIZONTAL.png" alt="hero de uleam">
+                <h2>Registro de Usuario</h2>
+                <form id="registro-form">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <label for="nombre">Primer Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div>
+                        <label for="facultad">Facultad:</label>
+                        <select id="facultad" name="facultad" required>
+                            <option value="">Seleccionar Carrera</option>
+                            <option value="Ingenieria">Ingeniería</option>
+                            <option value="Salud">Medicina</option>
+                            <option value="Arquitectura">Arquitectura</option>
+                            <option value="Educacion">Educación</option>
+                            <option value="Informatica">Informatica</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" id="cedula" name="cedula" required>
+                    </div>
+                    <div>
+                        <label for="celular">Celular:</label>
+                        <input type="text" id="celular" name="celular" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <div>
+                        <label for="verificar-contrasena">Verificar Contraseña:</label>
+                        <input type="password" id="verificar-contrasena" name="verificar-contrasena" required>
+                    </div>
+                    <div>
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+                <button id="boton-login">Volver al inicio de sesión</button>
+            </div>
+        </div>
+        
+    </main>
+    <!-- links y redes -->
+    <footer class="contenedor-abajo">
+        <div class="contenido-abajo">
+            <h3 class="contenido-texto">
+                © 2024 Universidad Laica Eloy Alfaro de Manabí - Jaramillo Cano Bryan Roberto. 
+            </h3>
+        </div>
+    </footer>
+    <script src="../javascript/registro.js"></script>
+</body>
+</html>
